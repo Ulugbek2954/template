@@ -1,0 +1,25 @@
+.msg {
+  position: relative;
+  max-width: 35em;
+  margin-top: 25px;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 4px;
+  min-height: 100px;
+  color: aqua;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 100%;
+    transform: translateX(50%);
+    border-top: 20px solid lightblue;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+  }
+}
